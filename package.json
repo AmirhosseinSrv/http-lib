@@ -1,0 +1,79 @@
+{
+  "name": "ts-http-lib",
+  "private": false,
+  "version": "1.0.1",
+  "description": "A flexible TypeScript HTTP client library that provides a unified interface for various HTTP client providers",
+  "type": "module",
+  "main": "dist/libs.umd.js",
+  "module": "dist/libs.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/libs.es.js",
+      "require": "./dist/libs.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run test && npm run build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "ky": "^1.8.1",
+    "superagent": "^10.2.1",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@types/superagent": "^8.1.9",
+    "@eslint/js": "^9.8.0",
+    "@testing-library/dom": "^10.4.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/parser": "^8.31.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "@vitest/coverage-v8": "^3.1.3",
+    "@vitest/ui": "^3.0.0",
+    "eslint": "^9.8.0",
+    "eslint-config-prettier": "^10.0.0",
+    "eslint-import-resolver-typescript": "^4.3.4",
+    "eslint-plugin-import": "2.31.0",
+    "globals": "^15.15.0",
+    "happy-dom": "^17.4.4",
+    "prettier": "^2.6.2",
+    "tslib": "^2.3.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.19.0",
+    "vite": "^6.0.0",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.0.0"
+  },
+  "packageManager": "pnpm@10.8.0",
+  "keywords": [
+    "http",
+    "client",
+    "axios",
+    "fetch",
+    "ky",
+    "superagent",
+    "typescript",
+    "zod"
+  ],
+  "author": "Amirhossein",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmirhosseinSrv/ts-http-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AmirhosseinSrv/ts-http-lib/issues"
+  },
+  "homepage": "https://github.com/AmirhosseinSrv/ts-http-lib#readme"
+}

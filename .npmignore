@@ -1,0 +1,31 @@
+# Source code
+src/
+tests/
+
+# Configuration files
+.eslintrc.js
+.eslintrc.json
+.prettierrc
+.prettierignore
+tsconfig.json
+tsconfig.base.json
+tsconfig.build.json
+vite.config.ts
+vitest.setup.ts
+
+# Development files
+node_modules/
+.github/
+.vscode/
+.idea/
+.git/
+.gitignore
+coverage/
+.nyc_output/
+
+# Build files
+*.log
+*.tgz
+
+# Misc
+.DS_Store
